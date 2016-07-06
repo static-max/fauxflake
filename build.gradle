@@ -27,5 +27,6 @@ subprojects {
 
     tasks.withType(Javadoc).each {
         it.classpath = sourceSets.main.compileClasspath
+        it.failOnError = false
     }
 }

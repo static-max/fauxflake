@@ -1,6 +1,9 @@
 [![Build Status](http://img.shields.io/travis/rholder/fauxflake.svg)](https://travis-ci.org/rholder/fauxflake) [![Coverage Status](http://img.shields.io/coveralls/rholder/fauxflake.svg)](https://coveralls.io/r/rholder/fauxflake?branch=master) [![Latest Version](http://img.shields.io/badge/latest-1.1.0-brightgreen.svg)](https://github.com/rholder/fauxflake/releases/tag/v1.1.0) [![License](http://img.shields.io/badge/license-apache%202-brightgreen.svg)](https://github.com/rholder/fauxflake/blob/master/LICENSE)
 
 ##What is this?
+Since the original [repo](https://github.com/rholder/fauxflake) does not seem to merge
+the PRs of issues, I started to merge the PRs from different forks in a single one.
+
 Fauxflake is an easily embeddable, decentralized, k-ordered unique ID generator.
 It can use the same encoded ID format as Twitter's Snowflake or Boundary's
 Flake implementations as well as any other customized encoding without too much
@@ -30,12 +33,12 @@ build tool:
     <dependency>
       <groupId>com.github.rholder.fauxflake</groupId>
       <artifactId>fauxflake-core</artifactId>
-      <version>1.1.0</version>
+      <version>1.1.1-SM</version>
     </dependency>
 
 ###Gradle
 
-    compile "com.github.rholder.fauxflake:fauxflake-core:1.1.0"
+    compile "com.github.rholder.fauxflake:fauxflake-core:1.1.1-SM"
 
 ##Quickstart
 Let's say you want to generate a lexicographically sortable, Twitter compatible
@@ -80,7 +83,7 @@ a cross-platform, self-contained bootstrap mechanism for the build. The only
 prerequisites are [Git](https://help.github.com/articles/set-up-git) and JDK 1.6+.
 
 ### check out sources
-`git clone git://github.com/rholder/fauxflake.git`
+`git clone git://github.com/static-max/fauxflake.git`
 
 ### compile and test, build all jars
 `./gradlew build`
